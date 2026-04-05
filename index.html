@@ -7,32 +7,114 @@
 </head>
 <body>
 
-    <h1>San Lorenzo de Almagro</h1>
+    <header>
+        <h1>San Lorenzo de Almagro</h1>
+        <p>El Club de sus amores, el Ciclón de Boedo</p>
+    </header>
 
-    <p>Conocé todo sobre el Ciclón. <a href="#final">Ir al final de la página.</a></p>
+    <nav>
+        <ul>
+            <li><a href="#seccion-info">Historia</a></li>
+            <li><a href="#seccion-lista">Títulos</a></li>
+            <li><a href="#seccion-imagen">Imagen</a></li>
+            <li><a href="#seccion-tabla">Plantel</a></li>
+            <li><a href="#seccion-formulario">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <img 
-        src="imagenes/ciclon.jpg" 
-        alt="Escudo de San Lorenzo de Almagro" 
-        width="300" 
-        height="200"
-    >
+    <main>
 
-    <h2>Títulos internacionales</h2>
-    <ul>
-        <li>Supercopa Argentina 2015</li>
-        <li>Copa Libertadores 2014</li>
-        <li>Copa Sudamericana 2002</li>
-    </ul>
+        <section id="seccion-info">
+            <h2>Historia del Club</h2>
+            <p>San Lorenzo de Almagro fue fundado el <span style="font-weight: bold;">1 de abril de 1908</span> en el barrio de Almagro, Buenos Aires.</p>
+            <p>Es uno de los cinco grandes del fútbol argentino</p>
+        </section>
 
-    <h2>Más información</h2>
-    <ul>
-        <li><a href="https://www.sanlorenzo.com.ar" target="_blank">Sitio oficial de San Lorenzo</a></li>
-        <li><a href="https://es.wikipedia.org/wiki/San_Lorenzo_de_Almagro" target="_blank">San Lorenzo en Wikipedia</a></li>
-    </ul>
+        <section id="seccion-lista">
+            <h2>Títulos Internacionales</h2>
+            <ul>
+                <li>Supercopa Argentina 2015</li>
+                <li>Copa Libertadores 2014</li>
+                <li>Copa Sudamericana 2002</li>
+            </ul>
+        </section>
 
-    <h2 id="final">Final de la página</h2>
-    <p>¡Gracias por visitar la página del Ciclón!</p>
+        <section id="seccion-imagen">
+            <h2>El Ciclón</h2>
+            <img
+                src="imagenes/ciclon.jpg"
+                alt="Escudo de San Lorenzo de Almagro"
+                width="300"
+                height="200"
+            >
+        </section>
+
+        <section id="seccion-tabla">
+            <h2>Algunos Ídolos Históricos</h2>
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Posición</th>
+                        <th>Período</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rinaldo Martino</td>
+                        <td>Delantero</td>
+                        <td>1960 - 1972</td>
+                    </tr>
+                    <tr>
+                        <td>Oscar Más</td>
+                        <td>Delantero</td>
+                        <td>1967 - 1976</td>
+                    </tr>
+                    <tr>
+                        <td>Claudio "Pipi" Romagnoli</td>
+                        <td>Delantero</td>
+                        <td>1993 - 2012</td>
+                    </tr>
+                    <tr>
+                        <td>Patricio Camps</td>
+                        <td>Arquero</td>
+                        <td>1995 - 2005</td>
+                    </tr>
+                    <tr>
+                        <td>Pablo Barrientos</td>
+                        <td>Mediocampista</td>
+                        <td>2001 - 2015</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="seccion-formulario">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+                <br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                <br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="¿Qué querés decirnos?"></textarea>
+                <br><br>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Página dedicada al Ciclón de Boedo &copy; 2025</p>
+        <p>Más info: <a href="https://www.sanlorenzo.com.ar" target="_blank">sanlorenzo.com.ar</a></p>
+    </footer>
 
 </body>
 </html>
