@@ -1,177 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
 </head>
 <body>
+
+    <nav>
+        <h2>Menú de Navegación</h2>
+        <ul>
+            <li><a href="#seccion-encabezados">Encabezados y Párrafos</a></li>
+            <li><a href="#seccion-enlaces">Enlaces</a></li>
+            <li><a href="#seccion-imagenes">Imágenes</a></li>
+            <li><a href="#seccion-listas">Listas</a></li>
+            <li><a href="#seccion-tabla">Tabla de Horarios</a></li>
+            <li><a href="#seccion-iframe">Iframe - Teatro Colón</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="seccion-encabezados">Encabezados y Párrafos</h2>
+
     <h1>Buenas noches</h1>
     <h1>Primer titulo</h1>
     <h2>Segundo titulo</h2>
     <h3>Tercer titulo</h3>
     <h4>Cuarto titulo</h4>
     <h5>Quinto titulo</h5>
-    <h6>Secto titulo</h6>
+    <h6>Sexto titulo</h6>
 
     <p>Primer parrafo</p>
     <p>Segundo <br> parrafo</p>
     <p>Tercer <span style="color: blueviolet;">parrafo</span></p>
 
+    <h2 id="seccion-enlaces">Enlaces</h2>
+
     <ul>
-      <li>
-        <a href="https://www.google.com" target="_blank">Ir a Google (enlace externo)</a>
-      </li>
-      <li>
-        <a href="correoelectronico@ejemplo.com">Enviar un correo electrónico</a>
-      </li>
-      <li>
-        <a href="#seccion-interna">Ir a la sección interna</a>
-      </li>
+        <li><a href="https://www.google.com" target="_blank">Ir a Google (enlace externo)</a></li>
+        <li><a href="mailto:correoelectronico@ejemplo.com">Enviar un correo electrónico</a></li>
+        <li><a href="#seccion-interna">Ir a la sección interna</a></li>
     </ul>
 
-    <h2 id="seccion-interna">Sección Interna</h2>
-    <p>Sección interna </p>
+    <h3 id="seccion-interna">Sección Interna</h3>
+    <p>Sección interna</p>
+
+    <h2 id="seccion-imagenes">Imágenes</h2>
 
     <p>Imagen desde internet:</p>
     <img 
-      src="https://www.espn.com.ar/futbol/equipo/_/id/18/san-lorenzo" 
-      alt="Logo oficial de HTML5" 
-      width="200" 
-      height="200"
+        src="https://www.espn.com.ar/futbol/equipo/_/id/18/san-lorenzo" 
+        alt="Logo oficial de HTML5" 
+        width="200" 
+        height="200"
     >
 
     <p>Imagen desde carpeta local:</p>
     <img 
-      src="imagenes/ciclon.jpg" 
-      alt="Foto local" 
-      width="300" 
-      height="200"
+        src="imagenes/ciclon.jpg" 
+        alt="Foto local" 
+        width="300" 
+        height="200"
     >
+
+    <h2 id="seccion-listas">Listas</h2>
 
     <h3>Lista desordenada (ul)</h3>
     <ul>
-      <li>CSS es un lenguaje de estilos</li>
-      <li>Se usa para dar diseño a páginas HTML</li>
-      <li>Permite controlar colores, fuentes y layouts</li>
+        <li>CSS es un lenguaje de estilos</li>
+        <li>Se usa para dar diseño a páginas HTML</li>
+        <li>Permite controlar colores, fuentes y layouts</li>
     </ul>
 
     <h3>Lista ordenada (ol)</h3>
     <ol>
-      <li>Crear el archivo HTML</li>
-      <li>Vincular la hoja de estilos CSS</li>
-      <li>Definir selectores y propiedades</li>
-      <li>Aplicar estilos a los elementos</li>
+        <li>Crear el archivo HTML</li>
+        <li>Vincular la hoja de estilos CSS</li>
+        <li>Definir selectores y propiedades</li>
+        <li>Aplicar estilos a los elementos</li>
     </ol>
 
     <h3>Lista de definición</h3>
     <dl>
-      <dt>Selector</dt>
-      <dd>Indica a qué elemento HTML se le aplicarán los estilos</dd>
+        <dt>Selector</dt>
+        <dd>Indica a qué elemento HTML se le aplicarán los estilos</dd>
 
-      <dt>Propiedad</dt>
-      <dd>Característica del elemento que se desea modificar</dd>
+        <dt>Propiedad</dt>
+        <dd>Característica del elemento que se desea modificar</dd>
 
-      <dt>Box Model</dt>
-      <dd>Modelo que describe el espacio que ocupa un elemento</dd>
+        <dt>Box Model</dt>
+        <dd>Modelo que describe el espacio que ocupa un elemento</dd>
 
-      <dt>Especificidad</dt>
-      <dd>Regla que determina qué estilo se aplica cuando varios selectores apuntan al mismo elemento.</dd>
+        <dt>Especificidad</dt>
+        <dd>Regla que determina qué estilo se aplica cuando varios selectores apuntan al mismo elemento.</dd>
     </dl>
 
-    <h2>Tabla de Horarios</h2>
+    <h2 id="seccion-tabla">Tabla de Horarios</h2>
+
     <table border="1" cellpadding="8" cellspacing="0">
-
-      <thead>
-        <tr>
-          <th rowspan="2">Materia</th>
-          <th colspan="3">Turno Mañana</th>
-          <th colspan="2">Turno Tarde</th>
-        </tr>
-        <tr>
-          <th>Lunes</th>
-          <th>Miércoles</th>
-          <th>Viernes</th>
-          <th>Martes</th>
-          <th>Jueves</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>HTML</td>
-          <td>8:00</td>
-          <td>8:00</td>
-          <td colspan="2">Sin clase</td>
-          <td>14:00</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td colspan="2">9:00</td>
-          <td>9:00</td>
-          <td>15:00</td>
-          <td>15:00</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>10:00</td>
-          <td colspan="3">Sin clase</td>
-          <td>16:00</td>
-        </tr>
-        <tr>
-          <td rowspan="2">Proyecto</td>
-          <td>11:00</td>
-          <td>11:00</td>
-          <td>11:00</td>
-          <td colspan="2">17:00</td>
-        </tr>
-        <tr>
-          <td colspan="3">Taller integrador</td>
-          <td colspan="2">18:00</td>
-        </tr>
-      </tbody>
-
+        <thead>
+            <tr>
+                <th rowspan="2">Materia</th>
+                <th colspan="3">Turno Mañana</th>
+                <th colspan="2">Turno Tarde</th>
+            </tr>
+            <tr>
+                <th>Lunes</th>
+                <th>Miércoles</th>
+                <th>Viernes</th>
+                <th>Martes</th>
+                <th>Jueves</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>8:00</td>
+                <td>8:00</td>
+                <td colspan="2">Sin clase</td>
+                <td>14:00</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td colspan="2">9:00</td>
+                <td>9:00</td>
+                <td>15:00</td>
+                <td>15:00</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>10:00</td>
+                <td colspan="3">Sin clase</td>
+                <td>16:00</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Proyecto</td>
+                <td>11:00</td>
+                <td>11:00</td>
+                <td>11:00</td>
+                <td colspan="2">17:00</td>
+            </tr>
+            <tr>
+                <td colspan="3">Taller integrador</td>
+                <td colspan="2">18:00</td>
+            </tr>
+        </tbody>
     </table>
+
+    <h2 id="seccion-iframe">Iframe - Teatro Colón</h2>
 
     <p>Seleccioná un sitio para ver dentro del iframe:</p>
     <ul>
-      <li>
-        <a href="https://www.google.com/maps?q=Teatro+Col%C3%B3n,+Buenos+Aires&output=embed" target="mi-iframe">
-          Teatro Colón en el mapa
-        </a>
-      </li>
-      <li>
-        <a href="https://www.teatrocolon.org.ar" target="mi-iframe">
-          Sitio oficial del Teatro Colón
-        </a>
-      </li>
-      <li>
-        <a href="https://es.wikipedia.org/wiki/Teatro_Col%C3%B3n" target="mi-iframe">
-          Wikipedia: Teatro Colón
-        </a>
-      </li>
+        <li>
+            <a href="https://www.google.com/maps?q=Teatro+Col%C3%B3n,+Buenos+Aires&output=embed" target="mi-iframe">
+                Teatro Colón en el mapa
+            </a>
+        </li>
+        <li>
+            <a href="https://www.teatrocolon.org.ar" target="mi-iframe">
+                Sitio oficial del Teatro Colón
+            </a>
+        </li>
+        <li>
+            <a href="https://es.wikipedia.org/wiki/Teatro_Col%C3%B3n" target="mi-iframe">
+                Wikipedia: Teatro Colón
+            </a>
+        </li>
     </ul>
 
     <iframe
-      name="mi-iframe"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9!2d-58.3831!3d-34.6009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab4e9f6f4c1%3A0x63e57b7b5a1e2f5e!2sTatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1234567890"
-      width="600"
-      height="400"
-      style="border: 2px solid #333;"
-      allowfullscreen
-      loading="lazy"
-      title="Mapa del Teatro Colón"
+        name="mi-iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9!2d-58.3831!3d-34.6009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab4e9f6f4c1%3A0x63e57b7b5a1e2f5e!2sTatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1234567890"
+        width="600"
+        height="400"
+        style="border: 2px solid #333;"
+        allowfullscreen
+        loading="lazy"
+        title="Mapa del Teatro Colón"
     ></iframe>
-
-    <!--<title> no tiene etiqueta de cierre 
-        <h1> se cierra con </h2>
-        <span> dentro del párrafo no se cierra
-        <p> no tiene etiqueta de cierre
-        el valor del atributo alt no está entre comillas
-        target="blank" falta el guion bajo
-        La lista <ul> se cierra con </ol>
-        Los <li> no tienen etiqueta de cierre
-        La tabla no tiene <tbody>, y la primera fila <tr> del encabezado no se cierra -->
 
 
 </body>
