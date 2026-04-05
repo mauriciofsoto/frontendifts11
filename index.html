@@ -18,6 +18,7 @@
             <li><a href="#seccion-tabla">Tabla de Horarios</a></li>
             <li><a href="#seccion-iframe">Iframe - Teatro Colón</a></li>
             <li><a href="#seccion-formulario">Formulario</a></li>
+            <li><a href="#seccion-formulario2">Formulario con Controles</a></li>
         </ul>
     </nav>
 
@@ -184,6 +185,55 @@
 
     <label for="correo">Correo electrónico:</label>
     <input type="email" id="correo" name="correo" placeholder="Ingresá tu correo">
+    <br><br>
+
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+</form>
+
+<h2 id="seccion-formulario2">Formulario con Controles</h2>
+
+<form>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
+    <br><br>
+
+    <label for="password">Contraseña:</label><br>
+    <input type="password" id="password" name="password" placeholder="Ingresá tu contraseña">
+    <br><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" min="1" max="120">
+    <br><br>
+
+    <p>Género:</p>
+    <input type="radio" id="masculino" name="genero" value="masculino">
+    <label for="masculino">Masculino</label>
+    <input type="radio" id="femenino" name="genero" value="femenino">
+    <label for="femenino">Femenino</label>
+    <input type="radio" id="otro" name="genero" value="otro">
+    <label for="otro">Otro</label>
+    <br><br>
+
+    <p>Intereses:</p>
+    <input type="checkbox" id="deportes" name="intereses" value="deportes">
+    <label for="deportes">Deportes</label>
+    <input type="checkbox" id="musica" name="intereses" value="musica">
+    <label for="musica">Música</label>
+    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+    <label for="tecnologia">Tecnología</label>
+    <input type="checkbox" id="arte" name="intereses" value="arte">
+    <label for="arte">Arte</label>
+    <br><br>
+
+    <label for="pais">País:</label><br>
+    <select id="pais" name="pais">
+        <option value="">-- Seleccioná un país --</option>
+        <option value="argentina">Argentina</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="chile">Chile</option>
+        <option value="brasil">Brasil</option>
+    </select>
     <br><br>
 
     <button type="submit">Enviar</button>
