@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frontend</title>
+<!DOCTYPE html> <!-- Declara el documento como HTML5 -->
+<html lang="es"> <!-- Etiqueta raíz, lang indica el idioma -->
+<head> <!-- Contiene metadatos de la página -->
+    <meta charset="UTF-8"> <!-- Codificación para soportar tildes y ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+    <title>Frontend</title> <!-- Título en la pestaña del navegador -->
 </head>
-<body>
+<body> <!-- Todo el contenido visible va acá -->
 
+    <!-- Menú de navegación con enlaces internos -->
     <nav>
         <h2>Menú de Navegación</h2>
         <ul>
@@ -19,8 +20,8 @@
         </ul>
     </nav>
 
+    <!-- Sección 1: encabezados h1 al h6 y párrafos con br y span -->
     <h2 id="seccion-encabezados">Encabezados y Párrafos</h2>
-
     <h1>Buenas noches</h1>
     <h1>Primer titulo</h1>
     <h2>Segundo titulo</h2>
@@ -28,24 +29,22 @@
     <h4>Cuarto titulo</h4>
     <h5>Quinto titulo</h5>
     <h6>Sexto titulo</h6>
-
     <p>Primer parrafo</p>
-    <p>Segundo <br> parrafo</p>
-    <p>Tercer <span style="color: blueviolet;">parrafo</span></p>
+    <p>Segundo <br> parrafo</p> <!-- br hace un salto de línea -->
+    <p>Tercer <span style="color: blueviolet;">parrafo</span></p> <!-- span aplica estilo a una parte del texto -->
 
+    <!-- Sección 2: enlaces externo, mailto e interno -->
     <h2 id="seccion-enlaces">Enlaces</h2>
-
     <ul>
-        <li><a href="https://www.google.com" target="_blank">Ir a Google (enlace externo)</a></li>
-        <li><a href="mailto:correoelectronico@ejemplo.com">Enviar un correo electrónico</a></li>
-        <li><a href="#seccion-interna">Ir a la sección interna</a></li>
+        <li><a href="https://www.google.com" target="_blank">Ir a Google (enlace externo)</a></li> <!-- target="_blank" abre en nueva pestaña -->
+        <li><a href="mailto:correoelectronico@ejemplo.com">Enviar un correo electrónico</a></li> <!-- mailto abre el cliente de correo -->
+        <li><a href="#seccion-interna">Ir a la sección interna</a></li> <!-- # navega a un id dentro de la página -->
     </ul>
-
     <h3 id="seccion-interna">Sección Interna</h3>
     <p>Sección interna</p>
 
+    <!-- Sección 3: imágenes con src, alt, width y height -->
     <h2 id="seccion-imagenes">Imágenes</h2>
-
     <p>Imagen desde internet:</p>
     <img 
         src="https://www.espn.com.ar/futbol/equipo/_/id/18/san-lorenzo" 
@@ -53,7 +52,6 @@
         width="200" 
         height="200"
     >
-
     <p>Imagen desde carpeta local:</p>
     <img 
         src="imagenes/ciclon.jpg" 
@@ -62,45 +60,40 @@
         height="200"
     >
 
+    <!-- Sección 4: lista desordenada, ordenada y de definición -->
     <h2 id="seccion-listas">Listas</h2>
-
     <h3>Lista desordenada (ul)</h3>
-    <ul>
+    <ul> <!-- ul: lista con viñetas, sin orden específico -->
         <li>CSS es un lenguaje de estilos</li>
         <li>Se usa para dar diseño a páginas HTML</li>
         <li>Permite controlar colores, fuentes y layouts</li>
     </ul>
-
     <h3>Lista ordenada (ol)</h3>
-    <ol>
+    <ol> <!-- ol: lista numerada automáticamente -->
         <li>Crear el archivo HTML</li>
         <li>Vincular la hoja de estilos CSS</li>
         <li>Definir selectores y propiedades</li>
         <li>Aplicar estilos a los elementos</li>
     </ol>
-
     <h3>Lista de definición</h3>
-    <dl>
+    <dl> <!-- dl: lista de definición. dt = término, dd = descripción -->
         <dt>Selector</dt>
         <dd>Indica a qué elemento HTML se le aplicarán los estilos</dd>
-
         <dt>Propiedad</dt>
         <dd>Característica del elemento que se desea modificar</dd>
-
         <dt>Box Model</dt>
         <dd>Modelo que describe el espacio que ocupa un elemento</dd>
-
         <dt>Especificidad</dt>
         <dd>Regla que determina qué estilo se aplica cuando varios selectores apuntan al mismo elemento.</dd>
     </dl>
 
+    <!-- Sección 5: tabla con thead, tbody, colspan y rowspan -->
     <h2 id="seccion-tabla">Tabla de Horarios</h2>
-
     <table border="1" cellpadding="8" cellspacing="0">
         <thead>
             <tr>
-                <th rowspan="2">Materia</th>
-                <th colspan="3">Turno Mañana</th>
+                <th rowspan="2">Materia</th> <!-- rowspan: ocupa 2 filas -->
+                <th colspan="3">Turno Mañana</th> <!-- colspan: ocupa 3 columnas -->
                 <th colspan="2">Turno Tarde</th>
             </tr>
             <tr>
@@ -146,8 +139,8 @@
         </tbody>
     </table>
 
+    <!-- Sección 6: iframe con enlaces que se abren dentro de él -->
     <h2 id="seccion-iframe">Iframe - Teatro Colón</h2>
-
     <p>Seleccioná un sitio para ver dentro del iframe:</p>
     <ul>
         <li>
@@ -166,9 +159,8 @@
             </a>
         </li>
     </ul>
-
     <iframe
-        name="mi-iframe"
+        name="mi-iframe" 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9!2d-58.3831!3d-34.6009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccab4e9f6f4c1%3A0x63e57b7b5a1e2f5e!2sTatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1234567890"
         width="600"
         height="400"
@@ -177,7 +169,6 @@
         loading="lazy"
         title="Mapa del Teatro Colón"
     ></iframe>
-
 
 </body>
 </html>
