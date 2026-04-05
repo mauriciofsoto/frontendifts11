@@ -1,204 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Semántica</title>
+    <title>San Lorenzo de Almagro</title>
 </head>
-
 <body>
 
-    <!-- Encabezado principal del sitio -->
-    <header>
-        <h1>Mi Sitio Web</h1>
-        <p>Página de ejemplo</p>
-    </header>
+    <h1>San Lorenzo de Almagro</h1>
 
-    <!-- Menú de navegación -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#articulos">Artículos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#seccion-multimedia">Audio y Video</a></li>
-            <li><a href="#seccion-horario">Horario Semanal</a></li>
-            <li><a href="#seccion-registro">Formulario de Registro</a></li>
-        </ul>
-    </nav>
+    <p>Conocé todo sobre el Ciclón. <a href="#final">Ir al final de la página.</a></p>
 
-    <!-- Contenido principal -->
-    <main>
-
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>Esta es la sección de bienvenida del sitio.</p>
-        </section>
-
-        <section id="articulos">
-            <h2>Artículos</h2>
-
-            <!-- Cada article representa un contenido independiente -->
-            <article>
-                <h3>Artículo 1: ¿Qué es HTML?</h3>
-                <p>HTML es el lenguaje de marcado que estructura el contenido de las páginas web.</p>
-            </article>
-
-            <article>
-                <h3>Artículo 2: ¿Qué es CSS?</h3>
-                <p>CSS es el lenguaje que se encarga de darle estilo y diseño a las páginas HTML.</p>
-            </article>
-
-        </section>
-
-        <h2 id="seccion-multimedia">Audio y Video</h2>
-
-        <!-- Audio -->
-        <h3>Audio</h3>
-        <audio controls>
-            <source src="audio/cancion.mp3" type="audio/mpeg">
-            Tu navegador no soporta la etiqueta de audio.
-        </audio>
-        <p>Este es un archivo de audio en formato MP3. Usá los controles para reproducir, pausar y ajustar el volumen.
-        </p>
-
-        <!-- Video -->
-        <h3>Video</h3>
-        <video controls width="600">
-            <source src="video/pelicula.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
-        <p>Este es un archivo de video en formato MP4. Podés reproducirlo, pausarlo y verlo a pantalla completa.</p>
-
-
-        <h2 id="seccion-horario">Horario Semanal de Clases</h2>
-
-        <table border="1" cellpadding="8" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Horario</th>
-                    <th>Lunes</th>
-                    <th>Martes</th>
-                    <th>Miércoles</th>
-                    <th>Jueves</th>
-                    <th>Viernes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>8:00 - 9:00</td>
-                    <td>Matemática</td>
-                    <td>Historia</td>
-                    <td>Matemática</td>
-                    <td>Historia</td>
-                    <td>Lengua</td>
-                </tr>
-                <tr>
-                    <td>9:00 - 10:00</td>
-                    <td>Lengua</td>
-                    <td colspan="2">Taller de Escritura</td>
-                    <td>Matemática</td>
-                    <td>Historia</td>
-                </tr>
-                <tr>
-                    <td>10:00 - 11:00</td>
-                    <td colspan="5">Recreo</td>
-                </tr>
-                <tr>
-                    <td>11:00 - 12:00</td>
-                    <td>Biología</td>
-                    <td>Matemática</td>
-                    <td>Historia</td>
-                    <td colspan="2">Proyecto Integrador</td>
-                </tr>
-                <tr>
-                    <td>12:00 - 13:00</td>
-                    <td rowspan="2">Educación Física</td>
-                    <td>Lengua</td>
-                    <td>Biología</td>
-                    <td>Lengua</td>
-                    <td>Matemática</td>
-                </tr>
-                <tr>
-                    <td>13:00 - 14:00</td>
-                    <td>Historia</td>
-                    <td>Lengua</td>
-                    <td>Biología</td>
-                    <td>Biología</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 id="seccion-registro">Formulario de Registro</h2>
-
-<form>
-    <!-- Nombre de usuario -->
-    <label for="usuario">Nombre de usuario:</label><br>
-    <input 
-        type="text" 
-        id="usuario" 
-        name="usuario" 
-        placeholder="Entre 4 y 20 caracteres"
-        minlength="4" 
-        maxlength="20" 
-        required
+    <img 
+        src="imagenes/ciclon.jpg" 
+        alt="Escudo de San Lorenzo de Almagro" 
+        width="300" 
+        height="200"
     >
-    <br><br>
 
-    <!-- Correo electrónico -->
-    <label for="email">Correo electrónico:</label><br>
-    <input 
-        type="email" 
-        id="email" 
-        name="email" 
-        placeholder="ejemplo@correo.com"
-        required
-    >
-    <br><br>
+    <h2>Títulos internacionales</h2>
+    <ul>
+        <li>Supercopa Argentina 2015</li>
+        <li>Copa Libertadores 2014</li>
+        <li>Copa Sudamericana 2002</li>
+    </ul>
 
-    <!-- Contraseña -->
-    <label for="pass">Contraseña:</label><br>
-    <input 
-        type="password" 
-        id="pass" 
-        name="pass" 
-        placeholder="Mínimo 8 caracteres"
-        minlength="8" 
-        maxlength="30" 
-        required
-    >
-    <br><br>
+    <h2>Más información</h2>
+    <ul>
+        <li><a href="https://www.sanlorenzo.com.ar" target="_blank">Sitio oficial de San Lorenzo</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/San_Lorenzo_de_Almagro" target="_blank">San Lorenzo en Wikipedia</a></li>
+    </ul>
 
-    <!-- Fecha de nacimiento -->
-    <label for="fecha">Fecha de nacimiento:</label><br>
-    <input 
-        type="date" 
-        id="fecha" 
-        name="fecha" 
-        min="1920-01-01" 
-        max="2010-12-31" 
-        required
-    >
-    <br><br>
-
-    <button type="submit">Registrarse</button>
-    <button type="reset">Limpiar</button>
-</form>
-
-    </main>
-
-    <!-- Contenido secundario, complementario al main -->
-    <aside>
-        <h3>Información adicional</h3>
-        <p>Bloque aside para mostrar publicidades</p>
-    </aside>
-
-    <!-- Pie de página -->
-    <footer id="contacto">
-        <p>Contacto: ejemplo@correo.com</p>
-        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
-    </footer>
+    <h2 id="final">Final de la página</h2>
+    <p>¡Gracias por visitar la página del Ciclón!</p>
 
 </body>
-
 </html>
