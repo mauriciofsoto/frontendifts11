@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Semántica</title>
 </head>
+
 <body>
 
     <!-- Encabezado principal del sitio -->
@@ -19,6 +21,7 @@
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#articulos">Artículos</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#seccion-multimedia">Audio y Video</a></li>
         </ul>
     </nav>
 
@@ -46,6 +49,25 @@
 
         </section>
 
+        <h2 id="seccion-multimedia">Audio y Video</h2>
+
+        <!-- Audio -->
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="audio/cancion.mp3" type="audio/mpeg">
+            Tu navegador no soporta la etiqueta de audio.
+        </audio>
+        <p>Este es un archivo de audio en formato MP3. Usá los controles para reproducir, pausar y ajustar el volumen.
+        </p>
+
+        <!-- Video -->
+        <h3>Video</h3>
+        <video controls width="600">
+            <source src="video/pelicula.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        <p>Este es un archivo de video en formato MP4. Podés reproducirlo, pausarlo y verlo a pantalla completa.</p>
+
     </main>
 
     <!-- Contenido secundario, complementario al main -->
@@ -61,4 +83,5 @@
     </footer>
 
 </body>
+
 </html>
